@@ -46,11 +46,11 @@
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.MetasComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CuotanumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.MetasdataGridView = new System.Windows.Forms.DataGridView();
             this.NuevaMetaButton = new System.Windows.Forms.Button();
             this.AgregarButton = new System.Windows.Forms.Button();
             this.RemoverButton = new System.Windows.Forms.Button();
@@ -58,8 +58,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sueldoNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RetencionPorcentajeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CuotanumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MetasdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // vendedorIDLabel
@@ -244,13 +244,13 @@
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // comboBox1
+            // MetasComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(55, 200);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 21);
-            this.comboBox1.TabIndex = 25;
+            this.MetasComboBox.FormattingEnabled = true;
+            this.MetasComboBox.Location = new System.Drawing.Point(55, 200);
+            this.MetasComboBox.Name = "MetasComboBox";
+            this.MetasComboBox.Size = new System.Drawing.Size(120, 21);
+            this.MetasComboBox.TabIndex = 25;
             // 
             // label2
             // 
@@ -270,20 +270,20 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Cuota";
             // 
-            // numericUpDown1
+            // CuotanumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(253, 200);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(103, 20);
-            this.numericUpDown1.TabIndex = 28;
+            this.CuotanumericUpDown.Location = new System.Drawing.Point(253, 200);
+            this.CuotanumericUpDown.Name = "CuotanumericUpDown";
+            this.CuotanumericUpDown.Size = new System.Drawing.Size(103, 20);
+            this.CuotanumericUpDown.TabIndex = 28;
             // 
-            // dataGridView1
+            // MetasdataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 224);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(374, 150);
-            this.dataGridView1.TabIndex = 29;
+            this.MetasdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MetasdataGridView.Location = new System.Drawing.Point(55, 224);
+            this.MetasdataGridView.Name = "MetasdataGridView";
+            this.MetasdataGridView.Size = new System.Drawing.Size(374, 150);
+            this.MetasdataGridView.TabIndex = 29;
             // 
             // NuevaMetaButton
             // 
@@ -304,6 +304,7 @@
             this.AgregarButton.TabIndex = 31;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.UseVisualStyleBackColor = true;
+            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
             // 
             // RemoverButton
             // 
@@ -323,11 +324,11 @@
             this.Controls.Add(this.RemoverButton);
             this.Controls.Add(this.AgregarButton);
             this.Controls.Add(this.NuevaMetaButton);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.MetasdataGridView);
+            this.Controls.Add(this.CuotanumericUpDown);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.MetasComboBox);
             this.Controls.Add(this.FechaDataTimePicker);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.retencionPorcentajeLabel);
@@ -355,8 +356,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sueldoNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RetencionPorcentajeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CuotanumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MetasdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,10 +385,10 @@
         private System.Windows.Forms.Button RemoverButton;
         private System.Windows.Forms.Button AgregarButton;
         private System.Windows.Forms.Button NuevaMetaButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.DataGridView MetasdataGridView;
+        private System.Windows.Forms.NumericUpDown CuotanumericUpDown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox MetasComboBox;
     }
 }

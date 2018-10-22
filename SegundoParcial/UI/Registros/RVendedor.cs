@@ -197,5 +197,26 @@ namespace SegundoParcial.UI.Registros
             RMetas r = new RMetas();
             r.ShowDialog();
         }
+        private void CargarGrid()
+        {
+            MetasdataGridView.DataSource = null;
+            MetasdataGridView.DataSource = this.Detalle;
+        }
+        private void AgregarButton_Click(object sender, EventArgs e)
+        {
+            if (MetasdatagridView.DataSource != null)
+                this.Detalle = (List<PresupuestoDetalle>)MetasdataGridView.DataSource;
+            this.Detalle.Add(
+                new PresupuestoDetalle(
+                    PresupuestoDetalleID: 0,
+                    PresupuestoID: (int)PresupuestoIDnumericUpDown.Value,
+                    CuentaID: CuentascomboBox.SelectedIndex,
+                    Valor: Convert.ToDouble(ValorTextBox.Text)
+
+                    )
+                );
+            errorProvider.Clear();
+            CargarGrid();
+        }
     }
 }
