@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace SegundoParcial.UI.Registros
 {
-    public partial class Registro : Form
+    public partial class RVendedor : Form
     {
         RepositorioBase<Vendedor> repositorio;
-        public Registro()
+        public RVendedor()
         {
             InitializeComponent();
         }

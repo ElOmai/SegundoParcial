@@ -11,32 +11,22 @@ using System.Windows.Forms;
 
 namespace SegundoParcial
 {
-    public partial class VentanaPrincipal : Form
+    public partial class MainForm : Form
     {
-        public VentanaPrincipal()
+        public MainForm()
         {
             InitializeComponent();
         }
         private void RegistrarVendedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro Registro = new Registro
-            {
-                MdiParent = this
-            };
+            RVendedor Registro = new RVendedor();
             Registro.Show();
-        }
-        private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void ConsultaVendedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConsultarVendedor consultarVendedores = new ConsultarVendedor
-            {
-                MdiParent = this
-        };
-            consultarVendedores.Show();
+            CVendedor c = new CVendedor();
+            c.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SegundoParcial.UI.Registros
 {
-    partial class Registro
+    partial class RVendedor
     {
         /// <summary>
         /// Required designer variable.
@@ -55,92 +55,102 @@
             // vendedorIDLabel
             // 
             this.vendedorIDLabel.AutoSize = true;
-            this.vendedorIDLabel.Location = new System.Drawing.Point(3, 64);
+            this.vendedorIDLabel.Location = new System.Drawing.Point(2, 52);
+            this.vendedorIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.vendedorIDLabel.Name = "vendedorIDLabel";
-            this.vendedorIDLabel.Size = new System.Drawing.Size(89, 17);
+            this.vendedorIDLabel.Size = new System.Drawing.Size(21, 13);
             this.vendedorIDLabel.TabIndex = 16;
-            this.vendedorIDLabel.Text = "vendedor ID:";
+            this.vendedorIDLabel.Text = "ID:";
             // 
             // nombresLabel
             // 
             this.nombresLabel.AutoSize = true;
-            this.nombresLabel.Location = new System.Drawing.Point(3, 90);
+            this.nombresLabel.Location = new System.Drawing.Point(2, 73);
+            this.nombresLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombresLabel.Name = "nombresLabel";
-            this.nombresLabel.Size = new System.Drawing.Size(69, 17);
+            this.nombresLabel.Size = new System.Drawing.Size(52, 13);
             this.nombresLabel.TabIndex = 18;
             this.nombresLabel.Text = "Nombres:";
             // 
             // sueldoLabel
             // 
             this.sueldoLabel.AutoSize = true;
-            this.sueldoLabel.Location = new System.Drawing.Point(3, 127);
+            this.sueldoLabel.Location = new System.Drawing.Point(2, 103);
+            this.sueldoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sueldoLabel.Name = "sueldoLabel";
-            this.sueldoLabel.Size = new System.Drawing.Size(56, 17);
+            this.sueldoLabel.Size = new System.Drawing.Size(43, 13);
             this.sueldoLabel.TabIndex = 19;
             this.sueldoLabel.Text = "Sueldo:";
             // 
             // retencionCalculoLabel
             // 
             this.retencionCalculoLabel.AutoSize = true;
-            this.retencionCalculoLabel.Location = new System.Drawing.Point(3, 167);
+            this.retencionCalculoLabel.Location = new System.Drawing.Point(2, 136);
+            this.retencionCalculoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.retencionCalculoLabel.Name = "retencionCalculoLabel";
-            this.retencionCalculoLabel.Size = new System.Drawing.Size(135, 17);
+            this.retencionCalculoLabel.Size = new System.Drawing.Size(103, 13);
             this.retencionCalculoLabel.TabIndex = 20;
             this.retencionCalculoLabel.Text = "Retencion A Pagar: ";
             // 
             // retencionPorcentajeLabel
             // 
             this.retencionPorcentajeLabel.AutoSize = true;
-            this.retencionPorcentajeLabel.Location = new System.Drawing.Point(250, 127);
+            this.retencionPorcentajeLabel.Location = new System.Drawing.Point(188, 103);
+            this.retencionPorcentajeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.retencionPorcentajeLabel.Name = "retencionPorcentajeLabel";
-            this.retencionPorcentajeLabel.Size = new System.Drawing.Size(148, 17);
+            this.retencionPorcentajeLabel.Size = new System.Drawing.Size(113, 13);
             this.retencionPorcentajeLabel.TabIndex = 21;
             this.retencionPorcentajeLabel.Text = "Retencion Porcentaje:";
             // 
             // vendedorIDNumericUpDown
             // 
-            this.vendedorIDNumericUpDown.Location = new System.Drawing.Point(110, 59);
+            this.vendedorIDNumericUpDown.Location = new System.Drawing.Point(82, 48);
+            this.vendedorIDNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vendedorIDNumericUpDown.Name = "vendedorIDNumericUpDown";
-            this.vendedorIDNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.vendedorIDNumericUpDown.Size = new System.Drawing.Size(90, 20);
             this.vendedorIDNumericUpDown.TabIndex = 17;
             // 
             // NombresTextBox
             // 
-            this.NombresTextBox.Location = new System.Drawing.Point(110, 87);
+            this.NombresTextBox.Location = new System.Drawing.Point(82, 71);
+            this.NombresTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NombresTextBox.Name = "NombresTextBox";
-            this.NombresTextBox.Size = new System.Drawing.Size(252, 22);
+            this.NombresTextBox.Size = new System.Drawing.Size(190, 20);
             this.NombresTextBox.TabIndex = 19;
             this.NombresTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombresTextBox_KeyPress);
             // 
             // sueldoNumericUpDown
             // 
             this.sueldoNumericUpDown.DecimalPlaces = 2;
-            this.sueldoNumericUpDown.Location = new System.Drawing.Point(110, 125);
+            this.sueldoNumericUpDown.Location = new System.Drawing.Point(82, 102);
+            this.sueldoNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sueldoNumericUpDown.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.sueldoNumericUpDown.Name = "sueldoNumericUpDown";
-            this.sueldoNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.sueldoNumericUpDown.Size = new System.Drawing.Size(90, 20);
             this.sueldoNumericUpDown.TabIndex = 20;
             this.sueldoNumericUpDown.ValueChanged += new System.EventHandler(this.SueldoNumericUpDown_ValueChanged);
             // 
             // retencionCalculoTextBox
             // 
-            this.retencionCalculoTextBox.Location = new System.Drawing.Point(144, 164);
+            this.retencionCalculoTextBox.Location = new System.Drawing.Point(108, 133);
+            this.retencionCalculoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.retencionCalculoTextBox.MaxLength = 10;
             this.retencionCalculoTextBox.Name = "retencionCalculoTextBox";
             this.retencionCalculoTextBox.ReadOnly = true;
-            this.retencionCalculoTextBox.Size = new System.Drawing.Size(100, 22);
+            this.retencionCalculoTextBox.Size = new System.Drawing.Size(76, 20);
             this.retencionCalculoTextBox.TabIndex = 21;
             // 
             // RetencionPorcentajeNumericUpDown
             // 
             this.RetencionPorcentajeNumericUpDown.DecimalPlaces = 2;
-            this.RetencionPorcentajeNumericUpDown.Location = new System.Drawing.Point(253, 164);
+            this.RetencionPorcentajeNumericUpDown.Location = new System.Drawing.Point(190, 133);
+            this.RetencionPorcentajeNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RetencionPorcentajeNumericUpDown.Name = "RetencionPorcentajeNumericUpDown";
-            this.RetencionPorcentajeNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.RetencionPorcentajeNumericUpDown.Size = new System.Drawing.Size(90, 20);
             this.RetencionPorcentajeNumericUpDown.TabIndex = 22;
             this.RetencionPorcentajeNumericUpDown.ValueChanged += new System.EventHandler(this.RetencionPorcentajeNumericUpDown_ValueChanged);
             // 
@@ -152,9 +162,10 @@
             // 
             this.EliminarButton.Image = global::SegundoParcial.Properties.Resources.if_cross_24_103181;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(244, 269);
+            this.EliminarButton.Location = new System.Drawing.Point(216, 219);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(75, 62);
+            this.EliminarButton.Size = new System.Drawing.Size(56, 50);
             this.EliminarButton.TabIndex = 15;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -165,9 +176,10 @@
             // 
             this.GuardarButton.Image = global::SegundoParcial.Properties.Resources.if_floppy_disk_save_103863;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(128, 269);
+            this.GuardarButton.Location = new System.Drawing.Point(119, 219);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(75, 62);
+            this.GuardarButton.Size = new System.Drawing.Size(56, 50);
             this.GuardarButton.TabIndex = 14;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -178,9 +190,10 @@
             // 
             this.NuevoButton.Image = global::SegundoParcial.Properties.Resources.if_new10_216291;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(12, 270);
+            this.NuevoButton.Location = new System.Drawing.Point(26, 219);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(75, 61);
+            this.NuevoButton.Size = new System.Drawing.Size(56, 50);
             this.NuevoButton.TabIndex = 13;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -191,9 +204,10 @@
             // 
             this.BuscarButton.Image = global::SegundoParcial.Properties.Resources.if_search_126577;
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(244, 12);
+            this.BuscarButton.Location = new System.Drawing.Point(183, 10);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(86, 58);
+            this.BuscarButton.Size = new System.Drawing.Size(64, 47);
             this.BuscarButton.TabIndex = 12;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -203,9 +217,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 205);
+            this.label1.Location = new System.Drawing.Point(4, 167);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 23;
             this.label1.Text = "Fecha";
             // 
@@ -213,16 +228,17 @@
             // 
             this.FechaDataTimePicker.CustomFormat = "dd/MM/yyyy";
             this.FechaDataTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechaDataTimePicker.Location = new System.Drawing.Point(110, 200);
+            this.FechaDataTimePicker.Location = new System.Drawing.Point(82, 162);
+            this.FechaDataTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FechaDataTimePicker.Name = "FechaDataTimePicker";
-            this.FechaDataTimePicker.Size = new System.Drawing.Size(123, 22);
+            this.FechaDataTimePicker.Size = new System.Drawing.Size(93, 20);
             this.FechaDataTimePicker.TabIndex = 24;
             // 
-            // Registro
+            // RVendedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 352);
+            this.ClientSize = new System.Drawing.Size(301, 286);
             this.Controls.Add(this.FechaDataTimePicker);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.retencionPorcentajeLabel);
@@ -240,9 +256,10 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.BuscarButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Registro";
+            this.Name = "RVendedor";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Registro";
             ((System.ComponentModel.ISupportInitialize)(this.vendedorIDNumericUpDown)).EndInit();
