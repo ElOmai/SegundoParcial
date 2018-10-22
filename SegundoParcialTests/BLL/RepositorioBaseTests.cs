@@ -6,11 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace SegundoParcial.BLL.Tests
 {
     [TestClass()]
-    public class RepositorioBaseTests
+    public class RepositorioBaseTests<T>: IDisposable, IRepository<T> where T : class
     {
         [TestMethod()]
         public void RepositorioBaseTest()
@@ -19,9 +20,19 @@ namespace SegundoParcial.BLL.Tests
         }
 
         [TestMethod()]
-        public void GuardarTest1()
+        public void GuardarTest(T Metas)
         {
-            Assert.Fail();
+            {
+                bool paso = false;
+                try
+                {
+                    if (_db.Set<T>().Add(entity) != null)
+                        paso = _db.SaveChanges() > 0;
+                }
+                catch (Exception)
+                { throw; }
+                return paso;
+            }
         }
 
         [TestMethod()]

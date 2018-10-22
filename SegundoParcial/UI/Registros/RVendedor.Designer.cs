@@ -40,16 +40,26 @@
             this.retencionCalculoTextBox = new System.Windows.Forms.TextBox();
             this.RetencionPorcentajeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.FechaDataTimePicker = new System.Windows.Forms.DateTimePicker();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.FechaDataTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NuevaMetaButton = new System.Windows.Forms.Button();
+            this.AgregarButton = new System.Windows.Forms.Button();
+            this.RemoverButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.vendedorIDNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sueldoNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RetencionPorcentajeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // vendedorIDLabel
@@ -105,7 +115,7 @@
             // vendedorIDNumericUpDown
             // 
             this.vendedorIDNumericUpDown.Location = new System.Drawing.Point(82, 48);
-            this.vendedorIDNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorIDNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.vendedorIDNumericUpDown.Name = "vendedorIDNumericUpDown";
             this.vendedorIDNumericUpDown.Size = new System.Drawing.Size(90, 20);
             this.vendedorIDNumericUpDown.TabIndex = 17;
@@ -113,7 +123,7 @@
             // NombresTextBox
             // 
             this.NombresTextBox.Location = new System.Drawing.Point(82, 71);
-            this.NombresTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NombresTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombresTextBox.Name = "NombresTextBox";
             this.NombresTextBox.Size = new System.Drawing.Size(190, 20);
             this.NombresTextBox.TabIndex = 19;
@@ -123,7 +133,7 @@
             // 
             this.sueldoNumericUpDown.DecimalPlaces = 2;
             this.sueldoNumericUpDown.Location = new System.Drawing.Point(82, 102);
-            this.sueldoNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sueldoNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.sueldoNumericUpDown.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -137,7 +147,7 @@
             // retencionCalculoTextBox
             // 
             this.retencionCalculoTextBox.Location = new System.Drawing.Point(108, 133);
-            this.retencionCalculoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retencionCalculoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.retencionCalculoTextBox.MaxLength = 10;
             this.retencionCalculoTextBox.Name = "retencionCalculoTextBox";
             this.retencionCalculoTextBox.ReadOnly = true;
@@ -148,7 +158,7 @@
             // 
             this.RetencionPorcentajeNumericUpDown.DecimalPlaces = 2;
             this.RetencionPorcentajeNumericUpDown.Location = new System.Drawing.Point(190, 133);
-            this.RetencionPorcentajeNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RetencionPorcentajeNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.RetencionPorcentajeNumericUpDown.Name = "RetencionPorcentajeNumericUpDown";
             this.RetencionPorcentajeNumericUpDown.Size = new System.Drawing.Size(90, 20);
             this.RetencionPorcentajeNumericUpDown.TabIndex = 22;
@@ -157,62 +167,6 @@
             // errorProvider
             // 
             this.errorProvider.ContainerControl = this;
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Image = global::SegundoParcial.Properties.Resources.if_cross_24_103181;
-            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(216, 219);
-            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(56, 50);
-            this.EliminarButton.TabIndex = 15;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.EliminarButton.UseVisualStyleBackColor = true;
-            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
-            // 
-            // GuardarButton
-            // 
-            this.GuardarButton.Image = global::SegundoParcial.Properties.Resources.if_floppy_disk_save_103863;
-            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(119, 219);
-            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(56, 50);
-            this.GuardarButton.TabIndex = 14;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.GuardarButton.UseVisualStyleBackColor = true;
-            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
-            // 
-            // NuevoButton
-            // 
-            this.NuevoButton.Image = global::SegundoParcial.Properties.Resources.if_new10_216291;
-            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(26, 219);
-            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(56, 50);
-            this.NuevoButton.TabIndex = 13;
-            this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.NuevoButton.UseVisualStyleBackColor = true;
-            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Image = global::SegundoParcial.Properties.Resources.if_search_126577;
-            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(183, 10);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(64, 47);
-            this.BuscarButton.TabIndex = 12;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label1
             // 
@@ -229,16 +183,151 @@
             this.FechaDataTimePicker.CustomFormat = "dd/MM/yyyy";
             this.FechaDataTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaDataTimePicker.Location = new System.Drawing.Point(82, 162);
-            this.FechaDataTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FechaDataTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.FechaDataTimePicker.Name = "FechaDataTimePicker";
             this.FechaDataTimePicker.Size = new System.Drawing.Size(93, 20);
             this.FechaDataTimePicker.TabIndex = 24;
+            // 
+            // EliminarButton
+            // 
+            this.EliminarButton.Image = global::SegundoParcial.Properties.Resources.if_cross_24_103181;
+            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.EliminarButton.Location = new System.Drawing.Point(316, 434);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(56, 50);
+            this.EliminarButton.TabIndex = 15;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
+            // 
+            // GuardarButton
+            // 
+            this.GuardarButton.Image = global::SegundoParcial.Properties.Resources.if_floppy_disk_save_103863;
+            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.GuardarButton.Location = new System.Drawing.Point(191, 434);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(56, 50);
+            this.GuardarButton.TabIndex = 14;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
+            // 
+            // NuevoButton
+            // 
+            this.NuevoButton.Image = global::SegundoParcial.Properties.Resources.if_new10_216291;
+            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NuevoButton.Location = new System.Drawing.Point(55, 434);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(56, 50);
+            this.NuevoButton.TabIndex = 13;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Image = global::SegundoParcial.Properties.Resources.if_search_126577;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BuscarButton.Location = new System.Drawing.Point(316, 11);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(87, 57);
+            this.BuscarButton.TabIndex = 12;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(55, 200);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(120, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 207);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Metas";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(212, 203);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Cuota";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(253, 200);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(103, 20);
+            this.numericUpDown1.TabIndex = 28;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(55, 224);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(374, 150);
+            this.dataGridView1.TabIndex = 29;
+            // 
+            // NuevaMetaButton
+            // 
+            this.NuevaMetaButton.Location = new System.Drawing.Point(181, 200);
+            this.NuevaMetaButton.Name = "NuevaMetaButton";
+            this.NuevaMetaButton.Size = new System.Drawing.Size(25, 21);
+            this.NuevaMetaButton.TabIndex = 30;
+            this.NuevaMetaButton.Text = "+";
+            this.NuevaMetaButton.UseVisualStyleBackColor = true;
+            this.NuevaMetaButton.Click += new System.EventHandler(this.NuevaMetaButton_Click);
+            // 
+            // AgregarButton
+            // 
+            this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AgregarButton.Location = new System.Drawing.Point(362, 200);
+            this.AgregarButton.Name = "AgregarButton";
+            this.AgregarButton.Size = new System.Drawing.Size(75, 21);
+            this.AgregarButton.TabIndex = 31;
+            this.AgregarButton.Text = "Agregar";
+            this.AgregarButton.UseVisualStyleBackColor = true;
+            // 
+            // RemoverButton
+            // 
+            this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoverButton.Location = new System.Drawing.Point(55, 380);
+            this.RemoverButton.Name = "RemoverButton";
+            this.RemoverButton.Size = new System.Drawing.Size(90, 25);
+            this.RemoverButton.TabIndex = 32;
+            this.RemoverButton.Text = "Remover";
+            this.RemoverButton.UseVisualStyleBackColor = true;
             // 
             // RVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 286);
+            this.ClientSize = new System.Drawing.Size(441, 493);
+            this.Controls.Add(this.RemoverButton);
+            this.Controls.Add(this.AgregarButton);
+            this.Controls.Add(this.NuevaMetaButton);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.FechaDataTimePicker);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.retencionPorcentajeLabel);
@@ -256,7 +345,7 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.BuscarButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RVendedor";
@@ -266,6 +355,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sueldoNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RetencionPorcentajeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +381,13 @@
         private System.Windows.Forms.Label sueldoLabel;
         private System.Windows.Forms.Label retencionCalculoLabel;
         private System.Windows.Forms.Label retencionPorcentajeLabel;
+        private System.Windows.Forms.Button RemoverButton;
+        private System.Windows.Forms.Button AgregarButton;
+        private System.Windows.Forms.Button NuevaMetaButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

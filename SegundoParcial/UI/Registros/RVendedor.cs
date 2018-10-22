@@ -191,5 +191,11 @@ namespace SegundoParcial.UI.Registros
             }
 
         }
+
+        private void NuevaMetaButton_Click(object sender, EventArgs e)
+        {
+            RMetas r = new RMetas();
+            r.ShowDialog();
+        }
     }
 }

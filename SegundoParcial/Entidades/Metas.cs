@@ -10,8 +10,8 @@ namespace SegundoParcial.Entidades
     public class Metas
     {
         [Key]
-        int Id;
-        string Descripcion;
-        decimal Cuota;
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
+        public decimal Cuota { get; set; }
     }
 }
